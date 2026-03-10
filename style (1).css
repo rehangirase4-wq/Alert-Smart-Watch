@@ -1,0 +1,61 @@
+body{
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#111;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+nav ul{
+list-style:none;
+padding:0;
+}
+
+nav ul li{
+display:inline;
+margin:10px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:60px;
+background:#0077ff;
+color:white;
+}
+
+button{
+padding:10px 20px;
+background:black;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+section{
+padding:40px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin:10px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+footer{
+text-align:center;
+background:black;
+color:white;
+padding:15px;
+}
