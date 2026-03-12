@@ -1,61 +1,71 @@
-body{
-font-family: Arial;
-margin:0;
-background:#f4f4f4;
-}
+     section {
+       background: rgb(45, 45, 45);
+        color: #fff;
+        padding: 5rem 0px;
+      }
 
-header{
-background:#111;
-color:white;
-padding:15px;
-text-align:center;
-}
+      section h2 {
+        font-size: 3rem;
+        padding: 0 5rem;
+      }
 
-nav ul{
-list-style:none;
-padding:0;
-}
+      .text {
+        font-size: 1.1rem;
+        padding: 0 5rem;
+        margin: 5rem 0;
+      }
 
-nav ul li{
-display:inline;
-margin:10px;
-}
+      .bg1 {
+        background-image: url(./img/sport-1.jpg);
+      }
 
-nav ul li a{
-color:white;
-text-decoration:none;
-}
+      .bg2 {
+        background-image: url(./img/sport-2.jpg);
+      }
 
-.hero{
-text-align:center;
-padding:60px;
-background:#0077ff;
-color:white;
-}
+      .bg3 {
+        background-image: url(./img/sport-3.jpg);
+      }
 
-button{
-padding:10px 20px;
-background:black;
-color:white;
-border:none;
-cursor:pointer;
-}
+      .box {
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: relative;
+      }
+      .box h4 {
+        font-size: 3.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
 
-section{
-padding:40px;
-}
+        /* BEST TEXT COLOR */
+        color: transparent;
+        -webkit-text-stroke: 2.5px #f5f5f5;   /* soft white */
 
-.card{
-background:white;
-padding:20px;
-margin:10px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
+        letter-spacing: 4px;
 
-footer{
-text-align:center;
-background:black;
-color:white;
-padding:15px;
-}
+        /* hover effect */
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.9);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        pointer-events: none;
+      }
+
+      .box:hover h4 {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+      }
+
+
+      .box::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.1);
+      }
